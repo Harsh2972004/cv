@@ -1,0 +1,163 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgb(7, 0, 0);
+    font-family: 'PT Serif', serif;
+    scroll-behavior: smooth;
+}
+
+/*  Header/Navigation Menu Styling */
+#navigation_bar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+#navigation_bar::before {
+    content: " ";
+    background: rgb(42, 153, 201);
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#logo {
+    height: 85px;
+    position: relative;
+    top: -13px;
+}
+
+#navigation_menu {
+    display: flex;
+    margin: 10px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#navigation_menu li {
+    list-style: none;
+}
+
+#navigation_menu li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 1.3rem;
+
+}
+
+#navigation_menu li a:hover {
+    color: rgb(225, 223, 223)
+}
+
+/* Home section styling */
+
+#home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+    margin-bottom: 20px;
+    background: rgba(219, 219, 219, 0.288);
+}
+
+.img{
+    position: relative;
+    top: 40px;
+    left: 100px;
+    height: 430px;
+    width: 430px;
+    box-shadow: -20px -20px 13px rgb(67, 67, 67);
+    
+}
+
+.btn {
+    background-color: rgb(214, 67, 67);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0px auto;
+    font-size: 1.3rem
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/* About Us styling */
+
+#about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px 500px 500px;
+}
+
+.img1{
+    position: relative;
+    top: 25px;
+    left: 100px;
+    height: 430px;
+    width: 430px;
+    box-shadow: 20px 20px 13px rgb(67, 67, 67);
+}
+.img2{
+    position: relative;
+    top: 25px;
+    left: 100px;
+    height: 430px;
+    width: 430px;
+    box-shadow: -20px -20px 13px rgb(67, 67, 67);
+}
+
+.img3{
+    position: relative;
+    top: 25px;
+    left: 100px;
+    height: 430px;
+    width: 430px;
+    box-shadow: 20px 20px 13px rgb(67, 67, 67);
+}
+
+.img4{
+    position: relative;
+    top: 25px;
+    left: 40px;
+    height: 430px;
+    width: 550px;
+    box-shadow: -25px -25px 13px rgb(67, 67, 67);
+}
+
+.p1{
+    margin-top: 20px;
+}
+
+.p-primary1 {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+/* Utility classes */
+.h-primary {
+    font-size: 5.3rem;
+    margin: 20px 0px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.p-primary {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
